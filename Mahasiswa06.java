@@ -8,6 +8,9 @@ public class Mahasiswa06 {
         System.out.println("Nama:" + nama);
         System.out.println("NIM:" + nim);
         System.out.println("IPK:" + ipk);
+        if (ipk < 0.0 || ipk > 4.0) {
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
+        }
         System.out.println("Kelas:" + kelas);
     }
     void ubahKelas(String kelasBaru) {
@@ -36,6 +39,5 @@ public class Mahasiswa06 {
     }
 
     public Mahasiswa06() {
-
     }
 }
